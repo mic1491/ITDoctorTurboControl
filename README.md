@@ -88,7 +88,9 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 
 ## 📥 下載與安裝指引
 
-1. 前往本專案右側的 [**Releases 發行版頁面**](https://github.com/mic1491/ITDoctorTurboControl/releases) 下載最新版本的 `ITDoctorTurboControl-v0.5.1.zip`。
+[![Direct Download v0.5.1](https://img.shields.io/badge/Download_Directly-v0.5.1_Zip-success?style=for-the-badge&logo=apple&color=34C759)](https://github.com/mic1491/ITDoctorTurboControl/raw/main/releases/ITDoctorTurboControl-v0.5.1.zip)
+
+1. 點擊上方按鈕直接下載 **[`ITDoctorTurboControl-v0.5.1.zip`（點我直接下載）](https://github.com/mic1491/ITDoctorTurboControl/raw/main/releases/ITDoctorTurboControl-v0.5.1.zip)**，或前往右側 [Releases 頁面](https://github.com/mic1491/ITDoctorTurboControl/releases)。
 2. 下載完成後解壓縮，將 **`IT Doctor Turbo Control.app`** 拖曳至您的 **「應用程式（Applications）」** 資料夾。
 3. 啟動應用程式（常駐於螢幕頂部的選單列）。
 
