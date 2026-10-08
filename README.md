@@ -9,7 +9,7 @@
 [![macOS](https://img.shields.io/badge/macOS-13.0%2B%20(Ventura%20%7C%20Sonoma%20%7C%20Sequoia)-black?style=for-the-badge&logo=apple)](https://github.com)
 [![Architecture](https://img.shields.io/badge/Architecture-Universal%202%20(Intel%20%2B%20Apple%20Silicon)-007AFF?style=for-the-badge)](https://github.com)
 [![Swift](https://img.shields.io/badge/Swift-5.9%20%7C%20SwiftUI%20%2B%20AppKit-FA7343?style=for-the-badge&logo=swift)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-v0.5.0-34C759?style=for-the-badge)](https://github.com)
+[![Version](https://img.shields.io/badge/Version-v0.5.1-34C759?style=for-the-badge)](https://github.com/mic1491/ITDoctorTurboControl/releases)
 
 [繁體中文](README.md) · [English Description](#english-overview) · [立即下載最新發行版](#-下載與安裝指引)
 
@@ -136,17 +136,25 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 
 ---
 
-## 🌐 English Overview
+## 🌐 English Overview & Quick Start
 
 **IT Doctor Turbo Control** is a modern, native macOS menu bar & dashboard application engineered for Intel MacBooks and Apple Silicon. It provides hardware-level thermal management and CPU frequency tuning without thermal throttling or loud fan noise.
 
-- **Universal 2 Binary**: Native Intel x86_64 & Apple Silicon arm64 support.
+- **Universal 2 Binary**: Native Intel x86_64 & Apple Silicon arm64 support (macOS 13+ Ventura, Sonoma, Sequoia).
 - **Instant Temperature Drop**: Lowers CPU temperatures by 20°C–30°C and eliminates annoying fan whines.
 - **Smart Thermal Diagnostics**: Generates human-readable thermal effect reports comparing metrics before and after Turbo disabling.
-- **Staged Wake Guard**: Automatic progressive verification ensuring Turbo Boost stays suppressed even across system sleep/wake cycles.
+- **Staged Wake Guard**: Automatic progressive verification (0.6s / 1.6s / 3.2s) ensuring Turbo Boost stays suppressed even across system sleep/wake cycles.
 - **Apple Liquid Material Design**: Native SwiftUI & AppKit implementation adhering to Apple Human Interface Guidelines.
-- **Jitter-Free Menu Bar**: Uses Unicode figure spaces (`\u{2007}`) for subpixel tabular alignment.
+- **Jitter-Free Menu Bar**: Uses Unicode figure spaces (`\u{2007}`) and monospaced digits for subpixel tabular alignment.
 - **Resizable Floating HUD & Desktop Widgets**: Mini capsule, standard, and large sizes with free corner-drag resizing.
+- **Clean Uninstallation**: Built-in 1-click uninstaller to completely purge launch daemons, login items, and caches.
+
+### 📥 English Installation Guide
+1. Click the green badge above or download [`ITDoctorTurboControl-v0.5.1.zip`](https://github.com/mic1491/ITDoctorTurboControl/raw/main/releases/ITDoctorTurboControl-v0.5.1.zip).
+2. Unzip and drag `IT Doctor Turbo Control.app` into your `/Applications` folder.
+3. If macOS displays **"Cannot be opened because the developer cannot be verified"**:
+   - Right-click (`Control + Click`) the app in Finder and choose **Open**, then click **Open** in the dialog.
+   - Or allow it in **System Settings → Privacy & Security → Open Anyway**.
 
 ---
 
