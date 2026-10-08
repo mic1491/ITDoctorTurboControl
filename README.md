@@ -88,26 +88,41 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 
 ## 📥 下載與安裝指引
 
-1. 前往本專案右側的 [**Releases 發行版頁面**](https://github.com) 下載最新版本的 `ITDoctorTurboControl-v0.5.0.zip`。
+1. 前往本專案右側的 [**Releases 發行版頁面**](https://github.com/mic1491/ITDoctorTurboControl/releases) 下載最新版本的 `ITDoctorTurboControl-v0.5.1.zip`。
 2. 下載完成後解壓縮，將 **`IT Doctor Turbo Control.app`** 拖曳至您的 **「應用程式（Applications）」** 資料夾。
-3. 雙擊啟動即可！應用程式會常駐於螢幕頂部的選單列中。
+3. 啟動應用程式（常駐於螢幕頂部的選單列）。
 
-> **💡 初次啟動提示**：
-> 若系統提示「無法開啟，因為未識別開發者」：
-> 請前往 macOS「系統設定」$\to$「隱私權與安全性」$\to$ 點擊「強制開啟」或「仍要開啟」即可。
+> [!IMPORTANT]
+> ### 🛡️ macOS Gatekeeper（安全性檢查）放行步驟
+> 本專案為開源獨立發布版本，尚未加入收費的 Apple Developer Program 簽章公證。初次啟動時若 macOS 彈出 **「無法打開，因為無法驗證開發者」** 或 **「Apple 無法檢查是否包含惡意軟體」**，請依下列方式放行（只需執行一次）：
+> 
+> - **方法 A（推薦：右鍵開啟）**：
+>   1. 在「應用程式」資料夾中，對 **`IT Doctor Turbo Control.app`** 按 **右鍵（Control + 點擊）**。
+>   2. 點擊選單中的 **「打開（Open）」**。
+>   3. 在彈出的安全警告對話框中，直接點擊 **「打開」** 按鈕即可正常運作。
+> 
+> - **方法 B（系統設定放行）**：
+>   1. 開啟 macOS **「系統設定」** $\to$ **「隱私權與安全性（Privacy & Security）」**。
+>   2. 向下滾動到「安全性」區塊，會看到 *「已阻擋 IT Doctor Turbo Control，因為它並非來自已識別的開發者」*。
+>   3. 點擊旁邊的 **「仍要打開（Open Anyway）」** 並輸入開機密碼確認。
+> 
+> - **方法 C（進階終端機指令清除隔離屬性）**：
+>   ```bash
+>   xattr -cr "/Applications/IT Doctor Turbo Control.app"
+>   ```
 
 ---
 
 ## ❓ 常見問題（FAQ）
 
 ### Q1：點了「關閉 Turbo」之後結束 App，重開機會一直關閉嗎？
-**不會！** Intel CPU 的 Turbo Boost 是由核心內部的揮發性暫存器（MSR `0x1A0`）控制的。只要電腦重新開機或斷電，硬體晶片微碼在開機自我檢測時一定會自動復原為原廠的「啟用」狀態。只要您沒打開 App，電腦就是 100% 原廠狀態。
+**不會！** Intel CPU 的 Turbo Boost 是由核心內部的揮發性暫存器（MSR `0x1A0`）控制的。只要電腦重新開機或斷電，硬體晶片微碼在開機自我檢測時一定會自動復原為原廠的「啟用」狀態。只要您沒打開 App，電腦就是 100% 原廠狀態。若您希望每次開機自動保持關閉，可勾選「開機啟動」與「啟動時自動停用 Turbo Boost」。
 
 ### Q2：關閉 Turbo Boost 會導致電腦變卡嗎？
 **日常使用完全無感！** Intel 處理器的基準時脈（例如 2.3 GHz）對於瀏覽數十個網頁、4K YouTube 播放、文書辦公、程式開發綽綽有餘。關閉 Turbo 僅影響極限高負載（如長時間 3D 渲染輸出），但在日常中能換來安靜、涼爽與大幅延長的電池壽命。
 
 ### Q3：電腦休眠蓋上螢幕，喚醒後設定會跑掉嗎？
-**不會！** 本 App 內建「休眠喚醒自動同步（Wake Resync）」專利機制。掀開螢幕喚醒後，程式會在背景自動校驗處理器狀態，若發現被系統重設，會瞬間自動補寫為您要求的狀態，全程無感維護。
+**不會！** 本 App 內建「三階段漸進式喚醒校驗（Staged Wake Guard）」機制。掀開螢幕喚醒後，程式會在背景 0.6s、1.6s、3.2s 自動持續校驗處理器狀態，一旦發現被系統刷回原廠設定，會瞬間自動補寫為您要求的狀態，全程無感維護。
 
 ---
 
@@ -118,6 +133,7 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 - **Universal 2 Binary**: Native Intel x86_64 & Apple Silicon arm64 support.
 - **Instant Temperature Drop**: Lowers CPU temperatures by 20°C–30°C and eliminates annoying fan whines.
 - **Smart Thermal Diagnostics**: Generates human-readable thermal effect reports comparing metrics before and after Turbo disabling.
+- **Staged Wake Guard**: Automatic progressive verification ensuring Turbo Boost stays suppressed even across system sleep/wake cycles.
 - **Apple Liquid Material Design**: Native SwiftUI & AppKit implementation adhering to Apple Human Interface Guidelines.
 - **Jitter-Free Menu Bar**: Uses Unicode figure spaces (`\u{2007}`) for subpixel tabular alignment.
 - **Resizable Floating HUD & Desktop Widgets**: Mini capsule, standard, and large sizes with free corner-drag resizing.
@@ -127,5 +143,5 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 ## 👨‍💻 作者與致謝
 
 - **開發者**：Matt
-- **版本**：v0.5.0 (Universal 2)
+- **版本**：v0.5.1 (Universal 2)
 - **版權聲明**：Copyright © 2026 Matt. All Rights Reserved. 個人免費使用。
