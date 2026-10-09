@@ -9,9 +9,9 @@
 [![macOS](https://img.shields.io/badge/macOS-13.0%2B%20(Ventura%20%7C%20Sonoma%20%7C%20Sequoia)-black?style=for-the-badge&logo=apple)](https://github.com)
 [![Architecture](https://img.shields.io/badge/Architecture-Universal%202%20(Intel%20%2B%20Apple%20Silicon)-007AFF?style=for-the-badge)](https://github.com)
 [![Swift](https://img.shields.io/badge/Swift-5.9%20%7C%20SwiftUI%20%2B%20AppKit-FA7343?style=for-the-badge&logo=swift)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-v0.5.2-34C759?style=for-the-badge)](https://github.com/mic1491/ITDoctorTurboControl/releases)
+[![Version](https://img.shields.io/badge/Version-v0.5.3-34C759?style=for-the-badge)](https://github.com/mic1491/ITDoctorTurboControl/releases)
 
-[繁體中文](README.md) · [English Description](#english-overview) · [立即下載最新發行版](#-下載與安裝指引)
+[繁體中文](README.md) · [English Description](#english-overview) · [日本語](#日本語-概要) · [简体中文](#简体中文-说明) · [立即下載最新發行版](#-下載與安裝指引)
 
 </div>
 
@@ -29,6 +29,10 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 ---
 
 ## ✨ 核心特色與功能亮點
+
+### 0. 🌐 多國語言原生支援 (Native Multi-Language i18n)
+- **4 種語言與跟隨系統**：完整在地化支援 **繁體中文 (Traditional Chinese)**、**English (英文)**、**日本語 (Japanese)**、**简体中文 (Simplified Chinese)**，以及自動偵測 macOS 系統語系。
+- **無縫即時切換**：在「偏好設定」右上角即可一秒切換，所有儀表板視圖、懸浮 HUD、選單列與即時 Toast 提示均即時相應刷新，無需重啟 App。
 
 ### 1. 🌬️ 處理器智慧調控 & 一鍵 Turbo 開關
 - **Intel 晶片深度支援**：直接通訊 CPU 核心暫存器（MSR `0x1A0`），精確控制 Turbo Boost 啟閉。
@@ -119,9 +123,9 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 
 ## 📥 下載與安裝指引
 
-[![Direct Download v0.5.2](https://img.shields.io/badge/Download_Directly-v0.5.2_Zip-success?style=for-the-badge&logo=apple&color=34C759)](https://github.com/mic1491/ITDoctorTurboControl/raw/main/releases/ITDoctorTurboControl-v0.5.2.zip)
+[![Direct Download v0.5.3](https://img.shields.io/badge/Download_Directly-v0.5.3_Zip-success?style=for-the-badge&logo=apple&color=34C759)](https://github.com/mic1491/ITDoctorTurboControl/raw/main/releases/ITDoctorTurboControl-v0.5.3.zip)
 
-1. 點擊上方按鈕直接下載 **[`ITDoctorTurboControl-v0.5.2.zip`（點我直接下載）](https://github.com/mic1491/ITDoctorTurboControl/raw/main/releases/ITDoctorTurboControl-v0.5.2.zip)**，或前往右側 [Releases 頁面](https://github.com/mic1491/ITDoctorTurboControl/releases)。
+1. 點擊上方按鈕直接下載 **[`ITDoctorTurboControl-v0.5.3.zip`（點我直接下載）](https://github.com/mic1491/ITDoctorTurboControl/raw/main/releases/ITDoctorTurboControl-v0.5.3.zip)**，或前往右側 [Releases 頁面](https://github.com/mic1491/ITDoctorTurboControl/releases)。
 2. 下載完成後解壓縮，將 **`IT Doctor Turbo Control.app`** 拖曳至您的 **「應用程式（Applications）」** 資料夾。
 3. 啟動應用程式（常駐於螢幕頂部的選單列）。
 
@@ -172,7 +176,9 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 **IT Doctor Turbo Control** is a modern, native macOS menu bar & dashboard application engineered for Intel MacBooks and Apple Silicon. It provides hardware-level thermal management and CPU frequency tuning without thermal throttling or loud fan noise.
 
 - **Universal 2 Binary**: Native Intel x86_64 & Apple Silicon arm64 support (macOS 13+ Ventura, Sonoma, Sequoia).
+- **Multi-Language (i18n)**: Native support for English, Traditional Chinese, Japanese, Simplified Chinese, and auto system language.
 - **Instant Temperature Drop**: Lowers CPU temperatures by 20°C–30°C and eliminates annoying fan whines.
+- **Adaptive Intelligence Engine**: Physical RC thermal modeling, Extended Kalman filter body heat protection, and Pareto frontier DVFS sweet spots.
 - **Smart Thermal Diagnostics**: Generates human-readable thermal effect reports comparing metrics before and after Turbo disabling.
 - **Staged Wake Guard**: Automatic progressive verification (0.6s / 1.6s / 3.2s) ensuring Turbo Boost stays suppressed even across system sleep/wake cycles.
 - **Apple Liquid Material Design**: Native SwiftUI & AppKit implementation adhering to Apple Human Interface Guidelines.
@@ -181,7 +187,7 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 - **Clean Uninstallation**: Built-in 1-click uninstaller to completely purge launch daemons, login items, and caches.
 
 ### 📥 English Installation Guide
-1. Click the green badge above or download [`ITDoctorTurboControl-v0.5.1.zip`](https://github.com/mic1491/ITDoctorTurboControl/raw/main/releases/ITDoctorTurboControl-v0.5.1.zip).
+1. Click the green badge above or download [`ITDoctorTurboControl-v0.5.3.zip`](https://github.com/mic1491/ITDoctorTurboControl/raw/main/releases/ITDoctorTurboControl-v0.5.3.zip).
 2. Unzip and drag `IT Doctor Turbo Control.app` into your `/Applications` folder.
 3. If macOS displays **"Cannot be opened because the developer cannot be verified"**:
    - Right-click (`Control + Click`) the app in Finder and choose **Open**, then click **Open** in the dialog.
@@ -189,8 +195,30 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 
 ---
 
+## 🇯🇵 日本語 概要
+
+**IT Doctor Turbo Control** は、MacBook 向けに開発された高性能なプロセッサ熱管理・動的周波数制御ユーティリティです。
+
+- **多言語対応**: 日本語、繁体中国語、英語、簡体中国語、および macOS システム言語自動同期に対応。
+- **瞬時に 20°C〜30°C 冷却**: Turbo Boost をインテリジェントに抑制し、発熱とファンの騒音を大幅に低減。
+- **バッテリー駆動時間向上**: 不要な高周波ブーストを抑えることで、バッテリー持続時間を 30%〜50% 向上。
+- **ネイティブ Liquid Material UI**: SwiftUI と AppKit で構築された美しい macOS ネイティブインターフェース。
+
+---
+
+## 🇨🇳 简体中文 说明
+
+**IT Doctor Turbo Control** 是一款专为 Mac 设计的底层硬件温控与动态调频管理软件，原生适配 Intel 与 Apple Silicon。
+
+- **多语言原生支持**：简体中文、繁体中文、英文、日文以及随系统自动切换。
+- **一键急速降温 20°C～30°C**：精准控制 Intel MSR 寄存器与 Apple Silicon 低电量模式，彻底告别风扇啸叫与机身烫手。
+- **自适应智能 AI 引擎**：物理热力学模型、机身防烫保护与工作负载指纹识别。
+- **极简无感纯净体验**：特权分离架构，免密无感常驻，自带一键完全干净卸载。
+
+---
+
 ## 👨‍💻 作者與致謝
 
 - **開發者**：Matt
-- **版本**：v0.5.1 (Universal 2)
+- **版本**：v0.5.3 (Universal 2)
 - **版權聲明**：Copyright © 2026 Matt. All Rights Reserved. 個人免費使用。
