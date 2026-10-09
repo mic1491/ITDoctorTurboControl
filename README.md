@@ -109,6 +109,24 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 - 初次安裝驗證後，日常在背景調節「完全全自動、全靜默執行」，絕不彈出密碼視窗打擾使用者。
 - **非侵入式理念**：不改寫系統核心檔案，App 沒開啟時 Mac 即為 100% 原廠出廠狀態。
 
+### 15. 🔌 外接螢幕桌面工作站模式 (External Display Auto-Switch)
+- 連接外接顯示器（如 Studio Display、4K 螢幕）時，自動切換至「極限效能」全速模式。
+- 拔除外接螢幕後，無縫還原回「智慧平衡」或安靜模式，全自動因應桌面與移動場景。
+
+### 16. ⌨️ URL Scheme 與終端機 CLI 深度整合 (`itdoctor://`)
+- **macOS 捷徑 (Shortcuts) / Raycast / Alfred / Stream Deck 連動**：
+  - `open "itdoctor://turbo/on"`（解鎖全速）
+  - `open "itdoctor://turbo/off"`（鎖定靜音）
+  - `open "itdoctor://turbo/toggle"`（切換狀態）
+  - `open "itdoctor://turbo/cooldown"`（啟動 60 秒急速散熱）
+- **終端機命令行支援**：直接呼叫 `ITDoctorTurboControl on/off/toggle/cooldown/status` 即時操控與查詢硬體狀態。
+
+### 17. 🛡️ 崩潰看門狗安全保護機制 (Crash Watchdog Guard)
+- 具備行程安全鎖與死鎖自動還原。即使應用程式意外崩潰或被強制終止（SIGKILL），看門狗亦會在下次啟動時安全自動校準並還原原廠處理器出廠狀態。
+
+### 18. 🔄 偏好設定內建 GitHub 一鍵檢查更新
+- 在「偏好設定」底部即時顯示目前版本與一鍵檢查 GitHub 最新發行版，新版釋出時提供一鍵直達下載。
+
 ---
 
 ## 💻 系統需求
