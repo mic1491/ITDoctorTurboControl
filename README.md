@@ -9,7 +9,7 @@
 [![macOS](https://img.shields.io/badge/macOS-13.0%2B%20(Ventura%20%7C%20Sonoma%20%7C%20Sequoia)-black?style=for-the-badge&logo=apple)](https://github.com)
 [![Architecture](https://img.shields.io/badge/Architecture-Universal%202%20(Intel%20%2B%20Apple%20Silicon)-007AFF?style=for-the-badge)](https://github.com)
 [![Swift](https://img.shields.io/badge/Swift-5.9%20%7C%20SwiftUI%20%2B%20AppKit-FA7343?style=for-the-badge&logo=swift)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-v0.5.1-34C759?style=for-the-badge)](https://github.com/mic1491/ITDoctorTurboControl/releases)
+[![Version](https://img.shields.io/badge/Version-v0.5.2-34C759?style=for-the-badge)](https://github.com/mic1491/ITDoctorTurboControl/releases)
 
 [繁體中文](README.md) · [English Description](#english-overview) · [立即下載最新發行版](#-下載與安裝指引)
 
@@ -63,9 +63,14 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 - 支援放入 macOS 桌面背景或通知中心。
 - 提供小型（Small，158×158）、中型（Medium，338×158）與大型（Large，338×354）三種標準規格。
 
-### 7. 🧠 AI 散熱慣性與飆溫預測神經引擎（Thermal Predictive Engine）
-- **提前 3~5 秒預警壓制**：有別於市面傳統工具被動等到 90°C 才反應，IT Doctor 內建微型時序回歸演算法，即時精算「核心溫升斜率 (ΔT/Δt)」與「CPU 負載加速度」。
-- **徹底抹平溫度尖峰**：在晶片積熱爆發前預先微調 Turbo，**完全消除風扇瞬間刺耳起飛與尖叫**，達成極致靜音。
+### 7. 🧠 革命性 AI 演算法矩陣與個人化作息自適應學習（Adaptive Intelligence Engine）
+- 🌡️ **RC 物理熱模型 + 擴展卡爾曼濾波（機身外殼防燙手體感保護）**：首創將 MacBook 機身建模為二階 RC 熱動力學系統，透過卡爾曼濾波器解耦晶片結溫與鋁合金外殼體感溫度，在金屬發燙前提前介入，打字或置於腿上使用時常保涼爽舒適。
+- 🔍 **AI 工作負載特徵指紋分類器（Workload Fingerprinting）**：擺脫手動維護白名單，自動依據負載波動率、方差與運算特徵即時辨識「✍️ 互動突發」、「🎬 長程吞吐」、「🎮 繪圖密集」與「🔋 後台節能」，自適應賦予最適動態頻率。
+- 🍃 **帕累托最佳能效比黃金甜蜜點（Pareto Frontier DVFS）**：依據三次晶片功耗曲線（P ∝ V²·f），長程運算時自動收斂至「保留 90% 效能、發熱降低 45%」的最優甜蜜點，兼顧極速流暢與無聲低溫。
+- 🤫 **心理聲學無感變頻調速（Psychoacoustic S-Curve Smoother）**：將風扇轉速加速度強制壓制在人耳無感變異率內（≤ 45 rpm/s），以三次貝茲曲線平滑過渡，徹底消滅風扇急遽加速時的刺耳嘯叫。
+- ⏳ **目標續航動態規劃演算法（Target-Duration Battery Planner）**：直接設定「預計還要使用：4 小時」，系統自動以剩餘電量反向推算整機可用功率上限，動態限制 Turbo 頻率，嚴格保證電池不提早耗盡。
+- 👤 **使用者習慣作息與反饋自適應學習（User Habit Learner）**：自動學習您的「日間專注 vs 夜間極靜音」作息，並根據每次手動調整 Turbo 的偏好累積獎懲反饋，動態微調控溫門檻與敏銳度。
+- ⚡️ **提前 3~5 秒溫升斜率預測**：微型時序演算法即時精算「核心溫升斜率 (ΔT/Δt)」與「CPU 負載加速度」，在晶片發燙前提前抹平溫度尖峰。
 
 ### 8. ❄️ 一鍵急速冷卻模式（60s Cooldown Booster）
 - **強效散熱緊急鍵**：在剪片渲染或高負載結束後，一鍵啟動 60 秒強效散熱。
@@ -114,9 +119,9 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 
 ## 📥 下載與安裝指引
 
-[![Direct Download v0.5.1](https://img.shields.io/badge/Download_Directly-v0.5.1_Zip-success?style=for-the-badge&logo=apple&color=34C759)](https://github.com/mic1491/ITDoctorTurboControl/raw/main/releases/ITDoctorTurboControl-v0.5.1.zip)
+[![Direct Download v0.5.2](https://img.shields.io/badge/Download_Directly-v0.5.2_Zip-success?style=for-the-badge&logo=apple&color=34C759)](https://github.com/mic1491/ITDoctorTurboControl/raw/main/releases/ITDoctorTurboControl-v0.5.2.zip)
 
-1. 點擊上方按鈕直接下載 **[`ITDoctorTurboControl-v0.5.1.zip`（點我直接下載）](https://github.com/mic1491/ITDoctorTurboControl/raw/main/releases/ITDoctorTurboControl-v0.5.1.zip)**，或前往右側 [Releases 頁面](https://github.com/mic1491/ITDoctorTurboControl/releases)。
+1. 點擊上方按鈕直接下載 **[`ITDoctorTurboControl-v0.5.2.zip`（點我直接下載）](https://github.com/mic1491/ITDoctorTurboControl/raw/main/releases/ITDoctorTurboControl-v0.5.2.zip)**，或前往右側 [Releases 頁面](https://github.com/mic1491/ITDoctorTurboControl/releases)。
 2. 下載完成後解壓縮，將 **`IT Doctor Turbo Control.app`** 拖曳至您的 **「應用程式（Applications）」** 資料夾。
 3. 啟動應用程式（常駐於螢幕頂部的選單列）。
 
