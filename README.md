@@ -133,7 +133,7 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 
 - **作業系統**：macOS 13.0 (Ventura) 或更新版本（完全相容 macOS 14 Sonoma 與 macOS 15 Sequoia）
 - **硬體平台**：Universal 2 雙原生架構
-  - 🔹 **Intel 處理器**：MacBook / MacBook Pro / MacBook Air / Mac mini / iMac（完整支援 MSR Turbo 控制）
+  - 🔹 **Intel 處理器 (Mac & 黑蘋果 Hackintosh)**：MacBook / MacBook Pro / MacBook Air / Mac mini / iMac，以及 Intel NUC8 / PC 筆電黑蘋果（完整支援 MSR `0x1A0` Turbo 控制，需搭配 `VirtualSMC` + `SMCProcessor.kext`）
   - 🔹 **Apple Silicon 晶片**：M1 / M2 / M3 / M4 系列晶片（支援原生低耗電模式無縫調控）
 - **記憶體預算**：常駐運行僅消耗約 20MB～28MB，背景 CPU 佔用率接近 0.0%。
 
@@ -186,6 +186,12 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 新版 macOS 具有嚴格的核心保護機制（SIP）。本 App 提供現代原生特權分離架構與免核心智慧工作階段。若遇到驅動無法載入：
 1. 請於偏好設定中點擊「安裝 Helper」並輸入管理員密碼完成授權。
 2. 若使用舊款專用 kext 驅動，請確認在系統設定允許擴充功能，或使用內建之「智慧工作階段（相容模式）」即可無需停用 SIP 正常運作。
+
+### Q6：這套軟體可以用在黑蘋果 (Hackintosh) 或 Intel NUC 小主機上嗎？
+**完全可以，且效果通常比原廠 MacBook 更顯著！**
+1. **硬體原理相同**：凡是搭載 Intel Core 處理器（Coffee Lake、Comet Lake、Kaby Lake 等，如 Intel NUC8 i5-8259U 或 PC 筆電）的黑蘋果裝置，底層處理器暫存器 MSR `0x1A0` 均完全一致，Turbo 啟閉與智慧調控百分之百生效。
+2. **小主機與輕薄本散熱救星**：像 Intel NUC8 體積小、散熱片小且採用高轉速渦輪扇，日常負載極易飆至 90°C~100°C 產生刺耳高頻噪聲。透過本 App 抑制 Turbo 或使用智慧平衡模式，通常可直接**淨降溫 15°C～25°C**，徹底消除風扇尖叫。
+3. **黑蘋果必備設定**：請確保 OpenCore / Clover EFI 中有載入 `VirtualSMC.kext` 與 `SMCProcessor.kext`，即可正常讀取核心溫度與功耗。
 
 ---
 
