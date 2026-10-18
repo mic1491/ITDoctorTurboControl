@@ -9,7 +9,7 @@
 [![macOS](https://img.shields.io/badge/macOS-13.0%2B%20(Ventura%20%7C%20Sonoma%20%7C%20Sequoia)-black?style=for-the-badge&logo=apple)](https://github.com)
 [![Architecture](https://img.shields.io/badge/Architecture-Universal%202%20(Intel%20%2B%20Apple%20Silicon)-007AFF?style=for-the-badge)](https://github.com)
 [![Swift](https://img.shields.io/badge/Swift-5.9%20%7C%20SwiftUI%20%2B%20AppKit-FA7343?style=for-the-badge&logo=swift)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-v0.5.3-34C759?style=for-the-badge)](https://github.com/mic1491/ITDoctorTurboControl/releases)
+[![Version](https://img.shields.io/badge/Version-v0.5.4-34C759?style=for-the-badge)](https://github.com/mic1491/ITDoctorTurboControl/releases)
 
 [繁體中文](README.md) · [English Description](#english-overview) · [日本語](#日本語-概要) · [简体中文](#简体中文-说明) · [立即下載最新發行版](#-下載與安裝指引)
 
@@ -141,9 +141,9 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 
 ## 📥 下載與安裝指引
 
-[![Direct Download v0.5.3](https://img.shields.io/badge/Download_Directly-v0.5.3_Zip-success?style=for-the-badge&logo=apple&color=34C759)](https://github.com/mic1491/ITDoctorTurboControl/releases/download/v0.5.3/ITDoctorTurboControl-v0.5.3.zip)
+[![Direct Download v0.5.4](https://img.shields.io/badge/Download_Directly-v0.5.4_Zip-success?style=for-the-badge&logo=apple&color=34C759)](https://github.com/mic1491/ITDoctorTurboControl/releases/download/v0.5.4/ITDoctorTurboControl-v0.5.4.zip)
 
-1. 點擊上方按鈕直接下載 **[`ITDoctorTurboControl-v0.5.3.zip`（點我直接下載）](https://github.com/mic1491/ITDoctorTurboControl/releases/download/v0.5.3/ITDoctorTurboControl-v0.5.3.zip)**，或前往右側 [Releases 頁面](https://github.com/mic1491/ITDoctorTurboControl/releases)。
+1. 點擊上方按鈕直接下載 **[`ITDoctorTurboControl-v0.5.4.zip`（點我直接下載）](https://github.com/mic1491/ITDoctorTurboControl/releases/download/v0.5.4/ITDoctorTurboControl-v0.5.4.zip)**，或前往右側 [Releases 頁面](https://github.com/mic1491/ITDoctorTurboControl/releases)。
 2. 下載完成後解壓縮，將 **`IT Doctor Turbo Control.app`** 拖曳至您的 **「應用程式（Applications）」** 資料夾。
 3. 啟動應用程式（常駐於螢幕頂部的選單列）。
 
@@ -211,7 +211,7 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 - **Clean Uninstallation**: Built-in 1-click uninstaller to completely purge launch daemons, login items, and caches.
 
 ### 📥 English Installation Guide
-1. Click the green badge above or download [`ITDoctorTurboControl-v0.5.3.zip`](https://github.com/mic1491/ITDoctorTurboControl/releases/download/v0.5.3/ITDoctorTurboControl-v0.5.3.zip).
+1. Click the green badge above or download [`ITDoctorTurboControl-v0.5.4.zip`](https://github.com/mic1491/ITDoctorTurboControl/releases/download/v0.5.4/ITDoctorTurboControl-v0.5.4.zip).
 2. Unzip and drag `IT Doctor Turbo Control.app` into your `/Applications` folder.
 3. If macOS displays **"Cannot be opened because the developer cannot be verified"**:
    - Right-click (`Control + Click`) the app in Finder and choose **Open**, then click **Open** in the dialog.
@@ -244,5 +244,5 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 ## 👨‍💻 作者與致謝
 
 - **開發者**：Matt
-- **版本**：v0.5.3 (Universal 2)
+- **版本**：v0.5.4 (Universal 2)
 - **版權聲明**：Copyright © 2026 Matt. All Rights Reserved. 個人免費使用。
