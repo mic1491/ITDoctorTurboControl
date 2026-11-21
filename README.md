@@ -9,7 +9,7 @@
 [![macOS](https://img.shields.io/badge/macOS-13.0%2B%20(Ventura%20%7C%20Sonoma%20%7C%20Sequoia)-black?style=for-the-badge&logo=apple)](https://github.com)
 [![Architecture](https://img.shields.io/badge/Architecture-Universal%202%20(Intel%20%2B%20Apple%20Silicon)-007AFF?style=for-the-badge)](https://github.com)
 [![Swift](https://img.shields.io/badge/Swift-5.9%20%7C%20SwiftUI%20%2B%20AppKit-FA7343?style=for-the-badge&logo=swift)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-v0.6.1-34C759?style=for-the-badge)](https://github.com/mic1491/ITDoctorTurboControl/releases)
+[![Version](https://img.shields.io/badge/Version-v0.6.3-34C759?style=for-the-badge)](https://github.com/mic1491/ITDoctorTurboControl/releases)
 
 [繁體中文](README.md) · [English Description](#english-overview) · [日本語](#日本語-概要) · [简体中文](#简体中文-说明) · [立即下載最新發行版](#-下載與安裝指引)
 
@@ -17,7 +17,22 @@
 
 ---
 
-## 🆕 v0.6.1 更新重點
+## 🆕 v0.6.3 更新重點
+
+**省電與效能 (App 本身更省)**
+- **只顯示選單列圖示時，App 自身 CPU 使用率從約 8% 降到約 1%，記憶體從 69 MB 降到 16 MB**（MacBook Pro 13" 2020 i7 實測）。
+- **自動調整取樣頻率**：儀表板、選單列面板或桌面 HUD 開著時每 2 秒；只剩選單列圖示時每 5 秒；用電池且未開自動控制時每 10 秒；螢幕關閉時暫停。
+- 數值沒變就不重畫；選單列圖示內容沒變時沿用上次的圖。
+- 量測時脈的迴圈不再每次取樣都執行 (只在有畫面顯示或選單列顯示時脈時量，其餘每 30 秒一次)。
+- 關閉儀表板、偏好設定視窗與桌面 HUD 後釋放畫面；選單列面板收起後也不再於背景更新。
+- 小工具資料改為狀態改變時立即更新，其餘最多每 60 秒一次 (原本每 2 秒寫檔並喚醒小工具)。
+
+**修正**
+- **接上電源後 Turbo 沒有自動打開**：電池期間的「關閉」是省電強制的結果，接電時改以使用者偏好為準，只有溫度已達關閉門檻等強制規則才維持關閉。
+- `itdoctor://` 指令 (快捷鍵、捷徑、終端機) 在選單列面板從未打開過時會被忽略，現在一律可用。
+- 版本號統一 (App 與小工具皆為 0.6.3)。
+
+## v0.6.1 更新重點
 
 **電池照護（整合 Battery Logger，不用再另外開）**
 - **選單列電池資訊**：仿 Apple 原廠電池圖示（依電量填色、充電閃電、接電插頭），旁邊顯示電量與剩餘時間；所有選單列風格都支援。
@@ -167,9 +182,9 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 
 ## 📥 下載與安裝指引
 
-[![Direct Download v0.6.1](https://img.shields.io/badge/Download_Directly-v0.6.1_Zip-success?style=for-the-badge&logo=apple&color=34C759)](https://github.com/mic1491/ITDoctorTurboControl/releases/download/v0.6.1/ITDoctorTurboControl-v0.6.1.zip)
+[![Direct Download v0.6.3](https://img.shields.io/badge/Download_Directly-v0.6.3_Zip-success?style=for-the-badge&logo=apple&color=34C759)](https://github.com/mic1491/ITDoctorTurboControl/releases/download/v0.6.3/ITDoctorTurboControl-v0.6.3.zip)
 
-1. 點擊上方按鈕直接下載 **[`ITDoctorTurboControl-v0.6.1.zip`（點我直接下載）](https://github.com/mic1491/ITDoctorTurboControl/releases/download/v0.6.1/ITDoctorTurboControl-v0.6.1.zip)**，或前往右側 [Releases 頁面](https://github.com/mic1491/ITDoctorTurboControl/releases)。
+1. 點擊上方按鈕直接下載 **[`ITDoctorTurboControl-v0.6.3.zip`（點我直接下載）](https://github.com/mic1491/ITDoctorTurboControl/releases/download/v0.6.3/ITDoctorTurboControl-v0.6.3.zip)**，或前往右側 [Releases 頁面](https://github.com/mic1491/ITDoctorTurboControl/releases)。
 2. 下載完成後解壓縮，將 **`IT Doctor Turbo Control.app`** 拖曳至您的 **「應用程式（Applications）」** 資料夾。
 3. 啟動應用程式（常駐於螢幕頂部的選單列）。
 
@@ -237,7 +252,7 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 - **Clean Uninstallation**: Built-in 1-click uninstaller to completely purge launch daemons, login items, and caches.
 
 ### 📥 English Installation Guide
-1. Click the green badge above or download [`ITDoctorTurboControl-v0.6.1.zip`](https://github.com/mic1491/ITDoctorTurboControl/releases/download/v0.6.1/ITDoctorTurboControl-v0.6.1.zip).
+1. Click the green badge above or download [`ITDoctorTurboControl-v0.6.3.zip`](https://github.com/mic1491/ITDoctorTurboControl/releases/download/v0.6.3/ITDoctorTurboControl-v0.6.3.zip).
 2. Unzip and drag `IT Doctor Turbo Control.app` into your `/Applications` folder.
 3. If macOS displays **"Cannot be opened because the developer cannot be verified"**:
    - Right-click (`Control + Click`) the app in Finder and choose **Open**, then click **Open** in the dialog.
@@ -270,5 +285,5 @@ MacBook 在輕薄機身下運行 Intel 處理器時，原廠 macOS 傾向於在�
 ## 👨‍💻 作者與致謝
 
 - **開發者**：Matt
-- **版本**：v0.6.1 (Universal 2)
+- **版本**：v0.6.3 (Universal 2)
 - **版權聲明**：Copyright © 2026 Matt. All Rights Reserved. 個人免費使用。
